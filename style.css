@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    margin: 0;
+    /* font-family: 'Major Mono Display', monospace; */
+    font-family: 'Rubik Moonrocks', cursive;
+    overflow: hidden;
+}
+
+.title {
+    position: absolute;
+    display: grid;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: 'Splash', cursive;
+    font-size: x-large;
+}
+.links {
+    position: absolute;
+    text-align: center;
+}
+.left {
+    writing-mode: vertical-rl;
+}
+.right {
+    right: 0;
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
+}
+
+.underline, .links > a {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+
+    display: inline-block;
+    position: relative;
+}
+
+#link-left::before, #link-right::before {
+    background-color: white;
+    position: absolute;
+    content: attr(data-content);
+    top: 0;
+    left: 0;
+    color: black;
+    text-decoration: underline;
+    overflow: hidden;
+    transition: height 275ms ease;
+    height: 0;
+    white-space: nowrap;
+}
+#link-left:hover::before, #link-right:hover::before {
+    height: 100%;
+}
+  
+.underline:after {
+    margin-bottom: -2px;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0) translateX(50%);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: 0.25s ease-out;
+}
+
+.underline:hover:after {
+    transform: scaleX(1) translateX(0);
+    transform-origin: bottom left;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    mix-blend-mode: difference;
+}
+
+h1, a {
+    mix-blend-mode: exclusion;
+}
+
+#links-right {
+    mix-blend-mode: exclusion;
+}
