@@ -1,8 +1,9 @@
+try {
 document.getElementById("links-right").style.marginTop = (document.body.clientHeight/2 - document.getElementById("link-right").offsetWidth/0.5) + "px";
 document.getElementById("links-right").style.marginRight = "8px";
 document.getElementById("links-left").style.marginTop = (document.body.clientHeight/2 - document.getElementById("link-left").offsetWidth*2.75) + "px";
 document.getElementById("links-left").style.marginLeft = "8px";
-
+} catch {}
 // let total = 3;
 // let isSet = false;
 // function set() {
