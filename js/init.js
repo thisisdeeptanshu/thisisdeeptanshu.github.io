@@ -23,6 +23,8 @@ document.getElementById("links-left").style.marginLeft = "8px";
 // }
 
 document.body.addEventListener("mousemove", (e) => {
-    document.getElementById("circle").style.left = e.pageX - 48 + "px";
-    document.getElementById("circle").style.top = e.pageY - 45 + "px";
+    document.getElementById("circle").style.left = e.pageX - 50 + "px";
+    document.getElementById("circle").style.top = e.pageY - 50 + "px";
+    document.getElementById("smolcircle").style.left = e.pageX - 2.5 + "px";
+    document.getElementById("smolcircle").style.top = e.pageY - 2.5 + "px";
 })
