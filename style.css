@@ -86,6 +86,7 @@ body {
     border-radius: 50%;
     position: absolute;
     mix-blend-mode: difference;
+    transition: all 0.3s, top 0s, left 0s;
 }
 #smolcircle {
     width: 5px;
