@@ -5,14 +5,21 @@
 		<title>about</title>
         <link rel="stylesheet" href="style.css">
 	</head>
-	<body style="background-color: black;color: white;margin-left: 10px;margin-right: 10px;overflow: auto;">
+	<body style="color: white;margin-left: 10px;margin-right: 10px;overflow: auto;background-image: url('images/1.png');" id="body">
         <span id="circle"></span>
 		<span id="smolcircle"></span>
         <h1 style="font-weight: normal;font-size: 64px;text-align: center;font-family: 'Dancing Script', cursive;">ag3rhuo0;esvfc bjlxnk</h1>
-        <p style="font-family: 'Dancing Script', cursive;font-size: 32px;">
+        <p style="font-family: 'Dancing Script', cursive;font-size: 32px;text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;" class="hover">
             iewufhjakbsc 2387irquwf shc9eawuisdkj fg2q39uriwei rhq42u9weittg t4927q3i49238qeydc7weugifh2983owredc<br>
-            <a class="underline" href="index.html">♥</a>
+            <a class="underline" href="https://www.youtube.com/watch?v=dElRVQFqj-k">Ily ♥</a>
         </p>
         <script src="js/init.js"></script>
+        <script>
+            backgroundImage_options = [
+                "url(images/1.png)",
+                "url(images/2.png)"
+            ]
+			document.getElementById("body").style.backgroundImage = backgroundImage_options[Math.floor(Math.random() * 2)]
+        </script>
 	</body>
 </html>

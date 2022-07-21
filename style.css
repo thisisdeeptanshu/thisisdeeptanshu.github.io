@@ -13,6 +13,18 @@ body {
     overflow: hidden;
 }
 
+#body {
+    background-repeat: no-repeat;
+}
+
+#body2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100vh;
+    background-attachment: fixed;
+    background-color: black;
+}
+
 .title {
     position: absolute;
     display: grid;
@@ -60,6 +72,23 @@ body {
 #link-left:hover::before, #link-right:hover::before {
     height: 100%;
 }
+
+#link-normal::before {
+    background-color: white;
+    position: absolute;
+    content: attr(data-content);
+    top: 0;
+    left: 0;
+    color: black;
+    text-decoration: underline;
+    overflow: hidden;
+    transition: width 275ms ease;
+    width: 0;
+    white-space: nowrap;
+}
+#link-normal:hover::before {
+    width: 100%;
+}
   
 .underline:after {
     margin-bottom: -2px;
@@ -96,7 +125,7 @@ body {
     position: absolute;
 }
 
-h1, a {
+a {
     mix-blend-mode: exclusion;
 }
 

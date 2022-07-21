@@ -9,7 +9,7 @@
 		<span id="circle"></span>
 		<span id="smolcircle"></span>
 		<div class="title">
-			<h1 style="grid-column: 1;grid-row: 1" id="name3" style="mix-blend-mode: exclusion;"><a class="underline" style="font-weight: normal;" href="about.html" onmouseover="onHover(this)" onmouseleave="reset()">DEEPTANSHU</a></h1>
+			<h1 id="glow" style="grid-column: 1;grid-row: 1" id="name3" style="mix-blend-mode: exclusion;"><a class="underline" style="font-weight: normal;" href="about.html" onmouseover="onHover(this)" onmouseleave="reset()">DEEPTANSHU</a></h1>
 		</div>
 		<div class="links left" id="links-left">
 			<a style="display: inline;" id="link-left" href="https://www.instagram.com/deeptanshu__is__here/" data-content="INSTAGRAM">INSTAGRAM</a>
@@ -17,8 +17,19 @@
 		<div class="links right" id="links-right">
 			<a style="display: inline;" id="link-right" href="credits.html" data-content="CREDITS">CREDITS</a>
 		</div>
+		<div class="links" style="bottom: 0px;" id="links-normal">
+			<a style="display: inline" id="link-normal" href="garbaj.html" data-content="garbaj">garbaj</a>
+		</div>
 		<script src="https://threejs.org/build/three.js"></script>
         <script src="js/script.js"></script>
 		<script src="js/init.js"></script>
+		<script>
+			glow_options = [
+				"0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red",
+				"0 0 10px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue",
+				"0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073"
+			]
+			document.getElementById("glow").style.textShadow = glow_options[Math.floor(Math.random() * 3)]
+		</script>
 	</body>
 </html>
