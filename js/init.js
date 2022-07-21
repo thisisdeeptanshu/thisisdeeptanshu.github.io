@@ -3,7 +3,7 @@ try {
     document.getElementById("links-right").style.marginRight = "8px";
     document.getElementById("links-left").style.marginTop = (document.body.clientHeight/2 - document.getElementById("link-left").offsetWidth*2.75) + "px";
     document.getElementById("links-left").style.marginLeft = "8px";
-    document.getElementById("links-normal").style.marginLeft = (document.body.clientWidth/2 - document.getElementById("links-normal").offsetHeight*2.25) + "px";
+    document.getElementById("links-normal").style.marginLeft = (document.body.clientWidth/2 - document.getElementById("links-normal").offsetHeight*1.75) + "px";
     document.getElementById("links-normal").style.marginBottom = "18px";
 } catch {}
 
